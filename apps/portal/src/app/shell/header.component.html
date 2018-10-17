@@ -1,0 +1,94 @@
+<div class="mid-header">
+  
+  
+
+  <!-- <app-audio></app-audio> -->
+
+  <div class="row text-center">
+
+    <div class="col-lg-3 col-md-3 mb-4">
+        <img src="../../assets/images/logo.png" alt="" class="img-logo">
+    </div>
+    <div class="col-lg-6 col-md-6 mb-4">
+        <h2 class="text-logo">Shekinah Tabernacle</h2>
+    </div>
+    <div class="col-lg-3 col-md-3 mb-4">
+        <h6 class="text-corn pr-3">APOCALYPSE 10 : 1 - 7 <br><span>...Et Il cria d'une voix forte comme rugit  un lion...</span></h6>
+    </div>
+  </div>
+</div>
+
+<div id="myHeader" class="navbar-hd">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#page-top" *ngIf="menuTitleVisible">Shekinah Tabernacle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+    
+          <ul class="navbar-nav" id="navbar-menu">
+            <li class="nav-item mr-3 active">
+              <a class="nav-link" routerLink="/">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+    
+            <li class="nav-item mr-3 navlink-more dropdown" dropdown>
+              <a id="button-basic1" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic1">Notre
+                Assemblee</a>
+              <ul id="dropdown-basic1" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic1">
+                <li role="menuitem"><a class="dropdown-item" routerLink="/assemblee">Shekinah Tabernacle</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/pastor">Le Pasteur</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/assemblee-staff">Ministres</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/morijah">Temple Morijah</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/ecamo">ECAMO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mr-3 navlink-more dropdown" dropdown>
+              <a id="button-basic2" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic2">William
+                Branham</a>
+              <ul id="dropdown-basic2" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic2">
+                <li role="menuitem"><a class="dropdown-item" routerLink="/prophet">Le Prophete</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/wmb-testimony">Le tour du monde</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/wmb-archives">Archives</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mr-3 navlink-more dropdown" dropdown>
+              <a id="button-basic3" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic3">Services</a>
+              <ul id="dropdown-basic3" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic3">
+                <li role="menuitem"><a class="dropdown-item" routerLink="/live-streaming">Le Direct / Live streaming</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/sermons">Predications Archives</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/services">Shekinah Publication</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/services">Pepite d'or</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mr-3 navlink-more dropdown" dropdown>
+              <a id="button-basic4" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic4">Multimedia</a>
+              <ul id="dropdown-basic4" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic4">
+                <li role="menuitem"><a class="dropdown-item" routerLink="/message">Message audio</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/bible">La Bible audio</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/music">Musique</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/photo">Gallery Photos</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/video">Video / Documentaires</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/news">News</a></li>
+                <li role="menuitem"><a class="dropdown-item" routerLink="/event">Events</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mr-3 navlink-more">
+              <a class="nav-link" routerLink="/contact">Contactez-nous</a>
+            </li>
+            <li class="nav-item mr-3" *ngIf="menuTitleVisible">
+              <button class="btn btn-danger navbar-btn" routerLink="/donation">Donation</button>
+            </li>
+          </ul>
+    
+        </div>
+      </nav>
+</div>

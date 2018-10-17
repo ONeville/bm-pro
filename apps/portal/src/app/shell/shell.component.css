@@ -1,0 +1,43 @@
+.carossa {
+    top:0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    z-index: -10;
+}
+
+.container-shell{
+    background-color: #fff;
+    /* margin-top: 20%; */
+}
+
+/* .carousel-caption {
+    top:0;
+    position: absolute;
+    margin-top: 250px;
+} */
+
+.table-horaire{
+    border-bottom: 1px solid #007bff;
+    
+}
+
+.event-img{
+    background-color: #007bff;
+    width: 140px;
+    height: 140px;
+    color: #fff;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.in-img{
+    /* vertical-align: middle; */
+    font-size: 90px;
+    padding: 2px;
+    /* text-align: center; */
+}
+.video-shell{
+    width: 633px;
+    height: 325px;
+}
