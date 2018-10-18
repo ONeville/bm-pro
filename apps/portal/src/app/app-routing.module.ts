@@ -2,12 +2,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-
-import {VgCoreModule} from 'videogular2/core';
-import {VgControlsModule} from 'videogular2/controls';
-import {VgOverlayPlayModule} from 'videogular2/overlay-play';
-import {VgBufferingModule} from 'videogular2/buffering';
-
 import { AppBootstrapModule } from './app-bootstrap.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -33,9 +27,6 @@ import { ShellComponent
 , MultimediaPhotoComponent 
 , MultimediaVideoComponent 
 , MultimediaDiversComponent } from './app.component.index';
-
-
-import { SafeHtml } from './shared/pipes/safeHtml.pipe';
 
 const appRoutes: Routes = [
   { path: '', component: ShellComponent, data: { title: 'Shekinkah Tabernacle' } },
@@ -63,19 +54,13 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ ShellComponent, ContactComponent, DonationComponent, AssembleeComponent, AssembleePastorComponent, AssembleeStaffComponent, AssembleeMorijahComponent, AssembleeEcamoComponent, WmbComponent, WmbTestimonyComponent, WmbArchivesComponent, ServicesComponent, ServicesDirectComponent, ServicesSermonsComponent, MultimediaComponent, MultimediaMessageComponent, MultimediaBibleComponent, MultimediaMusicComponent, MultimediaPhotoComponent, MultimediaVideoComponent, MultimediaDiversComponent, SafeHtml
+  declarations: [ ShellComponent, ContactComponent, DonationComponent, AssembleeComponent, AssembleePastorComponent, AssembleeStaffComponent, AssembleeMorijahComponent, AssembleeEcamoComponent, WmbComponent, WmbTestimonyComponent, WmbArchivesComponent, ServicesComponent, ServicesDirectComponent, ServicesSermonsComponent, MultimediaComponent, MultimediaMessageComponent, MultimediaBibleComponent, MultimediaMusicComponent, MultimediaPhotoComponent, MultimediaVideoComponent, MultimediaDiversComponent
   ],
   imports: [
     CommonModule,
     AppBootstrapModule,
     AngularFontAwesomeModule,
     MDBBootstrapModule.forRoot(),
-    
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-    
     RouterModule.forRoot(appRoutes)
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],

@@ -9,11 +9,6 @@ import { AppBootstrapModule } from './app-bootstrap.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppMediaModule } from './app-media.module';
 
-import {VgCoreModule} from 'videogular2/core';
-import {VgControlsModule} from 'videogular2/controls';
-import {VgOverlayPlayModule} from 'videogular2/overlay-play';
-import {VgBufferingModule} from 'videogular2/buffering';
-
 import { AppComponent } from './app.component';
 import { NxModule } from '@nrwl/nx';
 import { HeaderComponent } from './shell/header.component';
@@ -36,12 +31,6 @@ import { PagerService } from "./services";
     BsDropdownModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-
     NxModule.forRoot()
   ],
   providers: [UtilsService, SermonService, PagerService, SearchService],

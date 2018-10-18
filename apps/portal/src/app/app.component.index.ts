@@ -19,7 +19,5 @@ export * from './views/multimedia-music/multimedia-music.component';
 export * from './views/multimedia-photo/multimedia-photo.component';
 export * from './views/multimedia-video/multimedia-video.component';
 export * from './views/multimedia-divers/multimedia-divers.component';
-export * from './shared/jwplayer/jwplayer.component';
-
 export * from './shared/audia/audia.component';
 export * from './shared/video/video.component';

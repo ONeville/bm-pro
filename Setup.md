@@ -48,3 +48,7 @@
         ng generate component views/multimedia-photo --project=portal --module app-routing
         ng generate component views/multimedia-video --project=portal --module app-routing
         ng generate component views/multimedia-divers --project=portal --module app-routing
+
+
+
+        ng build --prod --base-href "https://oneville.github.io/shtab/"
