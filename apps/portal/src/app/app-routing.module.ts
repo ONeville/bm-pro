@@ -61,7 +61,7 @@ const appRoutes: Routes = [
     AppBootstrapModule,
     AngularFontAwesomeModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   exports: [RouterModule]
