@@ -1,12 +1,5 @@
 #Links
-    https://scotch.io/courses/build-your-first-angular-website/creating-an-angular-header-and-footer
 
-    ,
-              "node_modules/popper.js/dist/popper.min.js"
-
-              
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
 
 #Commands
     Add new project 
