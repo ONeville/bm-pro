@@ -1,3 +1,0 @@
-# Shtab
-
-Shekinah Website improving
