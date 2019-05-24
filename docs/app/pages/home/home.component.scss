@@ -1,0 +1,66 @@
+@import "scss/partials/variables";
+
+
+mdb-carousel {
+  mdb-carousel-item {
+    height: 500px;
+  }
+}
+
+.carousel {
+  .carousel-inner {}
+}
+
+.container-shell {
+  background-color: #fff;
+}
+
+.table-horaire {
+  border-bottom: 1px solid #007bff;
+
+  .top-header {
+    height: 155px;
+    color: $white;
+    align-items: center;
+
+  }
+
+  .body-card {
+    margin-top: 30px;
+  }
+}
+
+.event-img {
+  width: 140px;
+  height: 140px;
+  align-items: center;
+  align-self: center;
+}
+
+.in-img {
+  /* vertical-align: middle; */
+  font-size: 90px;
+  padding: 2px;
+  /* text-align: center; */
+}
+
+.video-shell {
+  width: 633px;
+  height: 325px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 300px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

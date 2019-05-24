@@ -1,14 +1,19 @@
-@import "assets/scss/partials/fonts";
+// @import "scss/partials/fonts";
 
-$base-font-family: 'Assistant-Light',
-sans-serif;
+$fa-font-path: "fontawesome/webfonts";
 
-$font-family-base:'Assistant-Light',
-sans-serif;
-$headings-font-family: 'Assistant-SemiBold',
-sans-serif;
+.sht-shell {
+  font-weight: 500;
+}
 
-$fa-font-path: "assets/fontawesome/webfonts";
+.sht-shell-1 {
+  font-weight: 400;
+}
+
+.sht-shell-2 {
+  font-weight: 300;
+}
+
 
 // @import "assets/fontawesome/scss/fontawesome.scss";
 // @import "assets/fontawesome/scss/solid.scss";

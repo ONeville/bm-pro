@@ -1,0 +1,145 @@
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Light mask</h3>
+      <p>First text</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Strong mask</h3>
+      <p>Secondary text</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Slight mask</h3>
+      <p>Third text</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+
+
+<div class="container">
+
+  <div class="row text-center table-horaire ">
+
+    <div class="col-lg-5 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+      <!-- Card -->
+      <mdb-card class="mt-3">
+        <div class="view blue-gradient waves-light d-flex justify-content-center top-header" mdbWavesEffect>
+          <h2>Church</h2>
+        </div>
+        <!--Card content-->
+        <mdb-card-body class="body-card">
+          <mdb-card-title>
+            <h4>
+              <i class="fas fa-calendar-day"></i>
+              Horaires des Services</h4>
+          </mdb-card-title>
+          <mdb-card-text>
+            <table class="table">
+              <tr>
+                <td class="text-left">Dimanche</td>
+                <td class="text-right"><span class="font-weight-bold">9h00</span><small class="ml-1">matin</small></td>
+              </tr>
+              <tr>
+                <td class="text-left">Mercredi</td>
+                <td class="text-right"><span class="font-weight-bold">17h00</span><small class="ml-1">soir</small></td>
+              </tr>
+              <tr>
+                <td class="text-left">Jeudi</td>
+                <td class="text-right"><span class="font-weight-bold">17h00</span><small class="ml-1">soir</small></td>
+              </tr>
+            </table>
+          </mdb-card-text>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+    <div class="col-lg-7 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+
+      <mdb-card class="mt-3">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" [src]="videoUrl" allowfullscreen></iframe>
+        </div>
+        <!--Card content-->
+        <mdb-card-body>
+          <mdb-card-title>
+            <h4 class="font-weight-bold">{{recentSermon.title}}</h4>
+          </mdb-card-title>
+          <mdb-card-text>
+            <table class="table table-sm table-borderless">
+              <tr>
+                <td class="text-left">
+                  <p>{{recentSermon.preacher}}</p>
+                  <small>{{recentSermon.location}}</small>
+                </td>
+                <td class="text-right">
+                  <i class="fas fa-calendar-day mr-2"></i>
+                  <small>{{recentSermon.date}}</small>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </mdb-card-text>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+
+  <!-- Three columns of text below the carousel  text-center -->
+  <div class="row sht-shell-1 text-center my-5">
+    <div class="col-lg-4 d-flex flex-column wow fadeInUp" data-wow-delay="0.4s">
+      <div class="rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img">
+        <span style="font-size: 58px;">
+          <i class="fas fa-camera"></i>
+        </span>
+      </div>
+      <h2>Dedicace</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
+        ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p><a class="btn btn-primary" href="#" role="button">Plus details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 d-flex flex-column wow fadeInUp" data-wow-delay="0.6s">
+      <div class="rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img">
+        <!-- <i class="fab fa-calendar-day"></i> -->
+        <span style="font-size: 3em;">
+          <i class="fas fa-camera"></i>
+        </span>
+      </div>
+      <h2>Temple Moriah</h2>
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
+        consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      </p>
+      <p><a class="btn btn-primary" href="#" role="button">Plus details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 d-flex flex-column wow fadeInUp" data-wow-delay="0.8s">
+      <div class="rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img">
+        <span style="font-size: 58px;">
+          <i class="fas fa-camera"></i>
+        </span>
+      </div>
+      <h2>Shekinah Publication</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+        massa justo sit amet risus.</p>
+      <p><a class="btn btn-primary" href="#" role="button">Plus details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+</div>

@@ -1,0 +1,362 @@
+<app-header-top></app-header-top>
+<div class="container d-flex align-items-center pt-4 mid-header">
+  <img src="./assets/images/logo.png" alt="" class="img-fluid">
+  <div class="flex-fill flex-grow-1">
+    <h2>Shekinah Tabernacle</h2>
+  </div>
+  <div class="ml-auto p-2">
+    <h6 class="text-corn pr-3 sht-shell-1">APOCALYPSE 10 : 1 - 7 <br><span>...Et Il cria d'une voix forte comme rugit un
+        lion...</span></h6>
+  </div>
+</div>
+
+
+<div id="myHeader" class="navbar-hd z-depth-4">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <button class="navbar-toggler btn-brand" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="sidenav.toggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-collapse-open" id="navbarResponsive">
+
+      <ul class="navbar-nav m-auto" id="navbar-menu">
+        <li class="nav-item mr-3 navlink-more">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Accueil</a>
+        </li>
+
+        <li class="nav-item navlink-space navlink-more dropdown" dropdown>
+          <a id="button-basic1" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic1">Notre
+            Assemblee</a>
+          <ul id="dropdown-basic1" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic1">
+            <li role="menuitem"><a class="dropdown-item" routerLink="/assemblee">Shekinah Tabernacle</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="/pastor">Le Pasteur</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="/assemblee-staff">Ministres</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="/morijah">Temple Morijah</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mr-4 navlink-more dropdown" dropdown>
+          <a id="button-basic2" dropdownToggle class="nav-link dropdown-toggle" aria-controls="dropdown-basic2">William
+            Branham</a>
+          <ul id="dropdown-basic2" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic2">
+            <li role="menuitem"><a class="dropdown-item" routerLink="/prophet">Le Prophete</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="/wmb-testimony">Le tour du monde</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="/wmb-archives">Archives</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown mega-dropdown special-menu" mdbDropdown>
+          <a mdbDropdownToggle class="nav-link sh-more-menu" mdbTooltip="Menu Encore Plus">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+          <div class="dropdown-menu mega-menu row z-depth-1 elegant-color-light black-text wow fadeInUp"
+            data-wow-delay="0.6s">
+            <div class="row">
+              <div class="col-md-5 col-xl-3 sub-menu mt-5 mb-5 pl-4">
+                <ul class="list-unstyled mx-4 pl-0">
+                  <li class="sub-title text-uppercase mt-sm">
+                    <a class="menu-item" routerLink="/wmb-archives">Missions</a>
+                  </li>
+                  <li class="sub-title text-uppercase">
+                    <a class="menu-item" routerLink="/wmb-archives">ECAMO</a>
+                  </li>
+                  <li class="sub-title text-uppercase">
+                    <a class="menu-item" routerLink="/wmb-archives">Shekinah Publication</a>
+                  </li>
+                  <li class="sub-title text-uppercase">
+                    <a class="menu-item" routerLink="/wmb-archives">Librairie</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-7 col-xl-9">
+                <div class="row">
+                  <div class="col-xl-4 mt-5 mb-4 pr-5 clearfix d-none d-block">
+                    <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold">
+                      Services</h6>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Le Direct / Live streaming</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/sermons">Predications Archives.</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Pepite d'or</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mt-5 mb-4 pr-5 clearfix d-none d-block">
+                    <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold">
+                      Multimedia</h6>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Message audio</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">La Bible</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Musique</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Gallery Photos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mt-5 mb-4 pr-5 clearfix d-none d-xl-block">
+                    <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold">
+                      Plus</h6>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">Video / Documentaires</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-single">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="Minor sample post image">
+                            <div class="mask rgba-white-slight flex-center">
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a class="news-title smaller mb-1" routerLink="/wmb-archives">News/Events.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item" *ngIf="menuTitleVisible || menuOpen">
+          <div class="d-flex align-self-center nav-control">
+
+            <div class="p-0">
+              <a mdbBtn floating="true" mdbTooltip="Live Streaming" routerLink="/live-streaming" size="sm"
+                gradient="blue" mdbWavesEffect>
+                <i class="fas fa-circle"></i>
+              </a></div>
+            <div class="p-0">
+              <button mdbBtn class="control" type="button" routerLink="/donation" color="danger" rounded="true"
+                mdbWavesEffect>Donation</button>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>
+
+<mdb-side-nav #sidenav class="sn-bg-1 mdb-skin fixed" [fixed]="false">
+  <mdb-navbar-brand>
+    <li>
+      <div class="logo-wrapper waves-light">
+        <a href="#"><img src="./assets/images/logo.png" class="img-fluid flex-center"></a>
+      </div>
+    </li>
+  </mdb-navbar-brand>
+
+  <links class="mt-5">
+    <li class="shtab-side-menu">
+      <ul class="collapsible collapsible-accordion">
+        <button mdbBtn type="button" color="default" rounded="true" mdbWavesEffect>
+          <i class="fas fa-circle"></i> Live
+        </button>
+
+        <mdb-accordion [multiple]="true" aria-multiselectable="false">
+          <mdb-accordion-item class="no-collase">
+            <mdb-accordion-item-head mdbWavesEffect><i class="far fa-hand-pointer"></i> Accueil
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body></mdb-accordion-item-body>
+          </mdb-accordion-item>
+          <mdb-accordion-item>
+            <mdb-accordion-item-head mdbWavesEffect><i class="fas fa-chevron-right"></i>
+              Notre Assemblee
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul>
+                <li><a href="#" mdbWavesEffect>Shekinah Tabernacle</a></li>
+                <li><a href="#" mdbWavesEffect>Le Pasteur</a></li>
+                <li><a href="#" mdbWavesEffect>Ministres</a></li>
+                <li><a href="#" mdbWavesEffect>Temple Morijah</a></li>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+
+          <mdb-accordion-item>
+            <mdb-accordion-item-head mdbWavesEffect><i class="fas fa-chevron-right"></i>
+              William Branham
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul>
+                <li><a href="#" mdbWavesEffect>Le Prophete</a></li>
+                <li><a href="#" mdbWavesEffect>Le tour du monde</a></li>
+                <li><a href="#" mdbWavesEffect>Archives</a></li>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+
+          <mdb-accordion-item>
+            <mdb-accordion-item-head mdbWavesEffect><i class="fas fa-chevron-right"></i>
+              Services
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul>
+                <li><a href="#" mdbWavesEffect>Predications Archives.</a></li>
+                <li><a href="#" mdbWavesEffect>Pepite d'or</a></li>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+          <mdb-accordion-item>
+            <mdb-accordion-item-head mdbWavesEffect><i class="fas fa-chevron-right"></i>
+              Multimedia
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul>
+                <li><a href="#" mdbWavesEffect>Message audio</a></li>
+                <li><a href="#" mdbWavesEffect>La Bible</a></li>
+                <li><a href="#" mdbWavesEffect>Musique</a></li>
+                <li><a href="#" mdbWavesEffect>Gallery Photos</a></li>
+                <li><a href="#" mdbWavesEffect>Video / Documentaires</a></li>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+
+          <mdb-accordion-item>
+            <mdb-accordion-item-head mdbWavesEffect><i class="fas fa-chevron-right"></i>
+              Plus...
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul>
+                <li><a href="#" mdbWavesEffect>News/Events</a></li>
+                <li><a href="#" mdbWavesEffect>Missions</a></li>
+                <li><a href="#" mdbWavesEffect>ECAMO</a></li>
+                <li><a href="#" mdbWavesEffect>Shekinah Publication</a></li>
+                <li><a href="#" mdbWavesEffect>Librairie</a></li>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+
+          <mdb-accordion-item class="no-collase">
+            <mdb-accordion-item-head mdbWavesEffect><i class="far fa-hand-pointer"></i> Contactez-nous
+            </mdb-accordion-item-head>
+            <mdb-accordion-item-body></mdb-accordion-item-body>
+          </mdb-accordion-item>
+
+        </mdb-accordion>
+
+        <button mdbBtn type="button" color="danger" rounded="true" mdbWavesEffect>
+          <i class="fas fa-dollar-sign"></i> Faire un Don
+        </button>
+
+      </ul>
+    </li>
+
+  </links>
+  <div class="sidenav-bg mask-strong"></div>
+</mdb-side-nav>
