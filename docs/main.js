@@ -448,8 +448,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ "./node_modules/ngx-bootstrap/datepicker/fesm5/ngx-bootstrap-datepicker.js");
 /* harmony import */ var ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-bootstrap/chronos */ "./node_modules/ngx-bootstrap/chronos/fesm5/ngx-bootstrap-chronos.js");
 /* harmony import */ var ngx_bootstrap_locale__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-bootstrap/locale */ "./node_modules/ngx-bootstrap/locale/fesm5/ngx-bootstrap-locale.js");
-/* harmony import */ var _shared_pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @shared/pipes/safe.pipe */ "./src/app/shared/pipes/safe.pipe.ts");
-/* harmony import */ var _pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @pages/layout-church/layout-church.component */ "./src/app/pages/layout-church/layout-church.component.ts");
+/* harmony import */ var _pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @pages/layout-church/layout-church.component */ "./src/app/pages/layout-church/layout-church.component.ts");
+/* harmony import */ var _shared_pipes__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @shared/pipes */ "./src/app/shared/pipes/index.ts");
 
 
 
@@ -484,7 +484,7 @@ var routes = [
     },
     {
         path: 'assemblee',
-        component: _pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_14__["LayoutChurchComponent"],
+        component: _pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_13__["LayoutChurchComponent"],
         data: { title: 'Shekinkah Tabernacle: Assemblee' },
         children: [
             {
@@ -609,7 +609,7 @@ var AppRoutingModule = /** @class */ (function () {
     }
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_14__["LayoutChurchComponent"]].concat(_pages__WEBPACK_IMPORTED_MODULE_3__["PAGES"], [_shared_pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_13__["SafePipe"]]),
+            declarations: [_pages_layout_church_layout_church_component__WEBPACK_IMPORTED_MODULE_13__["LayoutChurchComponent"]].concat(_pages__WEBPACK_IMPORTED_MODULE_3__["PAGES"], _shared_pipes__WEBPACK_IMPORTED_MODULE_14__["PIPES"]),
             imports: [
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"],
                 _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"],
@@ -625,7 +625,7 @@ var AppRoutingModule = /** @class */ (function () {
                 }),
                 _app_bootstrap_module__WEBPACK_IMPORTED_MODULE_5__["AppBootstrapModule"]
             ],
-            providers: [_pages_services_sermons_search_sermon_service__WEBPACK_IMPORTED_MODULE_6__["SearchService"], ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__["BsDaterangepickerDirective"], _shared_pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_13__["SafePipe"]],
+            providers: [_pages_services_sermons_search_sermon_service__WEBPACK_IMPORTED_MODULE_6__["SearchService"], ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__["BsDaterangepickerDirective"]].concat(_shared_pipes__WEBPACK_IMPORTED_MODULE_14__["PIPES"]),
             exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
         })
     ], AppRoutingModule);
@@ -643,7 +643,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  <app-header></app-header>\n  <div class=\"main-container\" [@routerTransition]=\"o.isActivated ? o.activatedRoute : ''\">\n    <router-outlet #o=\"outlet\"></router-outlet>\n  </div>\n  <app-footer></app-footer>\n"
+module.exports = "  <app-header></app-header>\n  <div class=\"main-container\" [@routerTransition]=\"o.isActivated ? o.activatedRoute : ''\">\n    <router-outlet #o=\"outlet\"></router-outlet>\n    <button class=\"btn btn-floating btn-large red waves-light\" mdbPageScroll href=\"#top-header\" mdbWavesEffect\n      style=\"right:35px; bottom:35px;\" [pageScrollDuration]=\"750\">\n      <i class=\"fas fa-arrow-up\"></i>\n    </button>\n  </div>\n  <app-footer></app-footer>\n"
 
 /***/ }),
 
@@ -1190,7 +1190,7 @@ var DonationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mdb-carousel class=\"carousel slide carousel-fade\" [animation]=\"'fade'\">\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide0.png'\" alt=\"Second slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Dieu est fidele</h1>\n      <p>Secondary text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide3.png'\" alt=\"First slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Tenez-vous tranquille et sachez que je suis Dieu</h1>\n      <p>First text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide2.png'\" alt=\"Third slide\">\n      <div class=\"mask rgba-black-slight waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h3 class=\"h3-responsive\">Slight mask</h3>\n      <p>Third text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide1.png'\" alt=\"Third slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h3 class=\"h3-responsive\">Slight mask</h3>\n      <p>Third text</p>\n    </div>\n  </mdb-carousel-item>\n</mdb-carousel>\n\n<!-- <mdb-carousel class=\"carousel slide carousel-fade\" [animation]=\"'fade'\" [interval]=\"1\">\n  <mdb-carousel-item>\n    <video class=\"video-fluid mask img-gradient\" autoplay loop>\n      <source src=\"https://mdbootstrap.com/img/video/Agua-natural.mp4\" type=\"video/mp4\" />\n    </video>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Tenez-vous tranquille et sachez que je suis Dieu</h1>\n      <p>Psaume 46:10</p>\n    </div>\n  </mdb-carousel-item>\n</mdb-carousel> -->\n\n<div class=\"container\">\n\n  <div class=\"row text-center table-horaire \">\n\n    <div class=\"col-lg-5 col-md-6 mb-4 wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <mdb-card class=\"mt-3\">\n        <div class=\"view winter-neva-gradient waves-light d-flex justify-content-center top-header\" mdbWavesEffect>\n\n          <div>\n            <h3 class=\"text-uppercase font-weight-bold\">Citation du jour</h3>\n            <p class=\"quote\">C'est l'ancre d'une foi divine qui appelle toute chose contraire à la Parole de Dieu comme\n              n'existant pas.\n              Cela donne une nouvelle vie. Cela donne l'espérance à ceux qui sont mourants. Cela donne du courage aux\n              faibles. Ça donne la guérison aux malades. <br><small>57-1222 - La Grande Lumiere Brillante</small></p>\n\n          </div>\n\n        </div>\n        <mdb-card-body class=\"body-card\">\n          <mdb-card-title>\n            <h4>\n              <i class=\"fas fa-calendar-day\"></i>\n              Horaires des Services</h4>\n          </mdb-card-title>\n          <mdb-card-text>\n            <table class=\"table\">\n              <tr>\n                <td class=\"text-left\">Dimanche</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">9h00</span><small class=\"ml-1\">matin</small></td>\n              </tr>\n              <tr>\n                <td class=\"text-left\">Mercredi</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">17h00</span><small class=\"ml-1\">soir</small></td>\n              </tr>\n              <tr>\n                <td class=\"text-left\">Jeudi</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">17h00</span><small class=\"ml-1\">soir</small></td>\n              </tr>\n            </table>\n          </mdb-card-text>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n    <div class=\"col-lg-7 col-md-6 mb-4 wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <mdb-card class=\"mt-3\">\n        <div class=\"embed-responsive embed-responsive-16by9\">\n          <iframe class=\"embed-responsive-item\" [src]=\"videoUrl\" allowfullscreen></iframe>\n        </div>\n        <mdb-card-body>\n          <mdb-card-title>\n            <h4 class=\"font-weight-bold\">{{recentSermon.title}}</h4>\n          </mdb-card-title>\n          <mdb-card-text>\n            <table class=\"table table-sm table-borderless\">\n              <tr>\n                <td class=\"text-left\">\n                  <p>{{recentSermon.preacher}}</p>\n                  <small>{{recentSermon.location}}</small>\n                </td>\n                <td class=\"text-right\">\n                  <i class=\"fas fa-calendar-day mr-2\"></i>\n                  <small>{{recentSermon.date}}</small>\n                </td>\n              </tr>\n              <tr>\n                <td></td>\n                <td></td>\n              </tr>\n            </table>\n          </mdb-card-text>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n  <div class=\"row sht-shell-1 text-center my-5\">\n    <div class=\"col-lg-4 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.4s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <span style=\"font-size: 58px;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Dedicace</h2>\n      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula\n        ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n    <div class=\"col-lg-4 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <!-- <i class=\"fab fa-calendar-day\"></i> -->\n        <span style=\"font-size: 3em;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Temple Moriah</h2>\n      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis\n        consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.\n      </p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n    <div class=\"col-lg-4 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.8s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <span style=\"font-size: 58px;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Shekinah Publication</h2>\n      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta\n        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum\n        massa justo sit amet risus.</p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n  </div>\n</div>\n\n\n<div class=\"row unique-color-dark pre-footer wow fadeInUp\" data-wow-delay=\"0.6s\">\n\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-4 wow fadeInUp\" data-wow-delay=\"0.6s\">\n        <mdb-card-img [src]=\"'assets/images/nice/sunset_1.jpg'\" class=\"img-fluid\" alt=\"Card image cap\"></mdb-card-img>\n      </div>\n      <div class=\"col-4 wow fadeInUp\" data-wow-delay=\"0.7s\">\n        <mdb-card-img [src]=\"'assets/images/nice/lac.jpg'\" class=\"img-fluid\" alt=\"Card image cap\">\n        </mdb-card-img>\n      </div>\n      <div class=\"col-4 wow fadeInUp\" data-wow-delay=\"0.8s\">\n        <mdb-card-img [src]=\"'assets/images/nice/sunset_0.jpg'\" class=\"img-fluid\" alt=\"Card image cap\"></mdb-card-img>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<mdb-carousel class=\"carousel slide carousel-fade\" [animation]=\"'fade'\">\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide0.png'\" alt=\"Second slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Dieu est fidele</h1>\n      <p>Secondary text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide3.png'\" alt=\"First slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Tenez-vous tranquille et sachez que je suis Dieu</h1>\n      <p>First text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide2.png'\" alt=\"Third slide\">\n      <div class=\"mask rgba-black-slight waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h3 class=\"h3-responsive\">Slight mask</h3>\n      <p>Third text</p>\n    </div>\n  </mdb-carousel-item>\n  <mdb-carousel-item>\n    <div class=\"view w-100 h-100\">\n      <img class=\"d-block w-100 h-100\" [src]=\"'assets/images/slide/slide1.png'\" alt=\"Third slide\">\n      <div class=\"mask rgba-black-light waves-light\" mdbWavesEffect></div>\n    </div>\n    <div class=\"carousel-caption\">\n      <h3 class=\"h3-responsive\">Slight mask</h3>\n      <p>Third text</p>\n    </div>\n  </mdb-carousel-item>\n</mdb-carousel>\n\n<!-- <mdb-carousel class=\"carousel slide carousel-fade\" [animation]=\"'fade'\" [interval]=\"1\">\n  <mdb-carousel-item>\n    <video class=\"video-fluid mask img-gradient\" autoplay loop>\n      <source src=\"https://mdbootstrap.com/img/video/Agua-natural.mp4\" type=\"video/mp4\" />\n    </video>\n    <div class=\"carousel-caption\">\n      <h1 class=\"h1-responsive\">Tenez-vous tranquille et sachez que je suis Dieu</h1>\n      <p>Psaume 46:10</p>\n    </div>\n  </mdb-carousel-item>\n</mdb-carousel> -->\n\n<div class=\"container\">\n\n  <div class=\"row text-center table-horaire \">\n\n    <div class=\"col-lg-5 col-md-6 mb-4 wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <mdb-card class=\"mt-3\">\n        <div class=\"view winter-neva-gradient waves-light d-flex justify-content-center top-header\" mdbWavesEffect>\n\n          <div>\n            <h3 class=\"text-uppercase font-weight-bold\">Citation du jour</h3>\n            <p class=\"quote\">C'est l'ancre d'une foi divine qui appelle toute chose contraire à la Parole de Dieu comme\n              n'existant pas.\n              Cela donne une nouvelle vie. Cela donne l'espérance à ceux qui sont mourants. Cela donne du courage aux\n              faibles. Ça donne la guérison aux malades. <br><small>57-1222 - La Grande Lumiere Brillante</small></p>\n\n          </div>\n\n        </div>\n        <mdb-card-body class=\"body-card\">\n          <mdb-card-title>\n            <h4>\n              <i class=\"fas fa-calendar-day\"></i>\n              Horaires des Services</h4>\n          </mdb-card-title>\n          <mdb-card-text>\n            <table class=\"table\">\n              <tr>\n                <td class=\"text-left\">Dimanche</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">9h00</span><small class=\"ml-1\">matin</small></td>\n              </tr>\n              <tr>\n                <td class=\"text-left\">Mercredi</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">17h00</span><small class=\"ml-1\">soir</small></td>\n              </tr>\n              <tr>\n                <td class=\"text-left\">Jeudi</td>\n                <td class=\"text-right\"><span class=\"font-weight-bold\">17h00</span><small class=\"ml-1\">soir</small></td>\n              </tr>\n            </table>\n          </mdb-card-text>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n    <div class=\"col-lg-7 col-md-6 mb-4 wow fadeInUp\" data-wow-delay=\"0.6s\"\n      *ngIf=\"(recentSermon$ | async) as recentSermon\">\n      <mdb-card class=\"mt-3\">\n        <div class=\"embed-responsive embed-responsive-16by9\">\n          <iframe class=\"embed-responsive-item\" [src]=\"recentSermon.videoId | safeVimeo\" allowfullscreen></iframe>\n        </div>\n        <mdb-card-body>\n          <mdb-card-title>\n            <h4 class=\"font-weight-bold\">{{recentSermon.title}}</h4>\n          </mdb-card-title>\n          <mdb-card-text>\n            <table class=\"table table-sm table-borderless\">\n              <tr>\n                <td class=\"text-left\">\n                  <p>{{recentSermon.preacher}}</p>\n                  <small>{{recentSermon.location}}</small>\n                </td>\n                <td class=\"text-right\">\n                  <i class=\"fas fa-calendar-day mr-2\"></i>\n                  <small>{{recentSermon.date}}</small>\n                </td>\n              </tr>\n              <tr>\n                <td></td>\n                <td></td>\n              </tr>\n            </table>\n          </mdb-card-text>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n  <div class=\"row sht-shell-1 text-center my-5\">\n    <div class=\"col-12 col-md-4 px-2 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.4s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <span style=\"font-size: 58px;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Dedicace</h2>\n      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula\n        ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n    <div class=\"col-12 col-md-4 px-2 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <!-- <i class=\"fab fa-calendar-day\"></i> -->\n        <span style=\"font-size: 3em;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Temple Moriah</h2>\n      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis\n        consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.\n      </p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n    <div class=\"col-12 col-md-4 px-2 d-flex flex-column wow fadeInUp\" data-wow-delay=\"0.8s\">\n      <div class=\"rounded-circle d-flex justify-content-center blue-gradient waves-light white-text event-img\">\n        <span style=\"font-size: 58px;\">\n          <i class=\"fas fa-camera\"></i>\n        </span>\n      </div>\n      <h2>Shekinah Publication</h2>\n      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta\n        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum\n        massa justo sit amet risus.</p>\n      <p><a class=\"btn btn-primary\" href=\"#\" role=\"button\">Plus details &raquo;</a></p>\n    </div><!-- /.col-lg-4 -->\n  </div>\n</div>\n\n\n<div class=\"row unique-color-dark pre-footer wow fadeInUp\" data-wow-delay=\"0.6s\">\n\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 col-md-4 mt-2 wow fadeInUp\" data-wow-delay=\"0.6s\">\n        <mdb-card-img [src]=\"'assets/images/nice/sunset_1.jpg'\" class=\"img-fluid\" alt=\"Card image cap\"></mdb-card-img>\n      </div>\n      <div class=\"col-12 col-md-4 mt-2 wow fadeInUp\" data-wow-delay=\"0.7s\">\n        <mdb-card-img [src]=\"'assets/images/nice/lac.jpg'\" class=\"img-fluid\" alt=\"Card image cap\">\n        </mdb-card-img>\n      </div>\n      <div class=\"col-12 col-md-4 mt-2 wow fadeInUp\" data-wow-delay=\"0.8s\">\n        <mdb-card-img [src]=\"'assets/images/nice/sunset_0.jpg'\" class=\"img-fluid\" alt=\"Card image cap\"></mdb-card-img>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1216,72 +1216,25 @@ module.exports = "mdb-carousel mdb-carousel-item {\n  height: 590px; }\n  mdb-ca
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @shared/services */ "./src/app/shared/services/index.ts");
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shared/services */ "./src/app/shared/services/index.ts");
 
 
 
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(router, utils, renderer) {
-        this.router = router;
-        this.utils = utils;
-        this.renderer = renderer;
-        this.recentSermon = {
-            title: 'La delivrance de Dieu dans un temps périlleux',
-            preacher: 'Pasteur Richard Diyoka',
-            date: 'Dimanche, 30-09-2018M',
-            location: 'BibleWay Cloverdale - Vancouver, CA',
-            // src: 'http://static.videogular.com/assets/videos/videogular.mp4'
-            src: 'https://player.vimeo.com/video/293221804?color=f1f6f7&title=0&byline=0&portrait=0',
-            srcHtml: 
-            // tslint:disable-next-line:max-line-length
-            '<iframe src="https://player.vimeo.com/video/293221804?color=f1f6f7&title=0&byline=0&portrait=0" width="633" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-        };
-        this.cards = [
-            {
-                img: 'assets/images/nice/lac.jpg'
-            },
-            {
-                img: 'assets/images/nice/sunset.jpg'
-            },
-            {
-                img: 'assets/images/nice/sunset_0.jpg'
-            },
-        ];
-        this.slides = [[]];
-        this.myInterval = 3000;
+    function HomeComponent(sermonService) {
+        this.sermonService = sermonService;
     }
     HomeComponent.prototype.ngOnInit = function () {
-        this.videoUrl = this.utils.safeVideoUrl(this.recentSermon.src);
-        this.slides = this.chunk(this.cards, 3);
-    };
-    HomeComponent.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        var buttons = document.querySelectorAll('.btn-floating');
-        buttons.forEach(function (el) {
-            _this.renderer.removeClass(el, 'btn-floating');
-            _this.renderer.addClass(el, 'px-3');
-            _this.renderer.addClass(el.firstElementChild, 'fa-3x');
-        });
-    };
-    HomeComponent.prototype.chunk = function (arr, chunkSize) {
-        var R = [];
-        for (var i = 0, len = arr.length; i < len; i += chunkSize) {
-            R.push(arr.slice(i, i + chunkSize));
-        }
-        return R;
+        this.recentSermon$ = this.sermonService.getLastTwoSermons();
     };
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/pages/home/home.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
-            _shared_services__WEBPACK_IMPORTED_MODULE_3__["UtilsService"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services__WEBPACK_IMPORTED_MODULE_2__["SermonService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -2137,7 +2090,7 @@ var SearchService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container sht-shell-1 my-4\">\n  <div class=\"row sht-search\">\n    <div class=\"col-md-12 p-0 m-0 wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <form class=\"form-inline md-form form-sm active-cyan-2 z-depth-5 border border-primary rounded-lg p-2\">\n        <!-- [(ngModel)]=\"searchText\" .\" -->\n        <input id=\"form-contact-name\" class=\"form-control form-control-sm mx-3 w-75\" type=\"text\"\n          (keydown)=\"search($event)\" autocomplete=\"off\" aria-label=\"Search\" mdbInput>\n        <label for=\"form-contact-name\" class=\"\">Recherchez une Predication par titre, ministre, mot cles, etc...</label>\n        <button *ngIf=\"!showFilter\" type=\"button\" (click)=\"search()\" mdbBtn color=\"danger\" outline=\"true\" rounded=\"true\"\n          class=\"waves-light\" mdbWavesEffect data-dismiss=\"modal\">\n          <i class=\"fas fa-search\" aria-hidden=\"true\"></i>\n        </button>\n        <button type=\"button\" mdbBtn color=\"primary\" (click)=\"showFilter=!showFilter\" outline=\"true\" rounded=\"true\"\n          class=\"waves-light bt-control\" mdbWavesEffect data-dismiss=\"modal\">\n          <i class=\"fas fa-filter\"></i>\n        </button>\n\n        <div class=\"dropdown\" mdbDropdown>\n          <button type=\"button\" mdbDropdownToggle mdbBtn color=\"info\"  outline=\"true\"\n            rounded=\"true\" class=\"dropdown-toggle waves-light bt-control\" mdbWavesEffect data-dismiss=\"modal\">\n            <i class=\"fas fa-sort-amount-up\"></i>\n          </button>\n          <div class=\"dropdown-menu dropdown-primary\">\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('date')\">Triez par Date</a>\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('preacher')\">Triez par\n              Predicateur</a>\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('title')\">Triez par Titre</a>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n  <div *ngIf=\"pagedItems.length === 0 && !showFilter\" class=\"row wow fadeIn\" data-wow-delay=\"0s\">\n    <div class=\"col-12\">\n      <mdb-card class=\"w-80 justify-content-center\">\n        <mdb-card-body>\n          <mdb-card-title>\n            <h3 class=\"text-center text-warning\">Aucun Enregistrement Trouvé <i class=\"fas fa-search ml-4\"\n                aria-hidden=\"true\"></i></h3>\n            <p class=\"text-center\">Vieillez rechercher ou rafiner autrement</p>\n          </mdb-card-title>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n  <!-- wow zoomIn\" data-wow-delay=\"0.1s\" -->\n  <div *ngIf=\"showFilter\" class=\"row wow fadeIn\" data-wow-delay=\"0s\">\n    <div class=\"col-12 filter-panel\">\n      <mdb-card class=\"w-80\">\n        <mdb-card-body>\n          <mdb-card-title>\n            <h3>Recherche Avancee</h3>\n            <!-- <div class=\"mx-5 clearfix\">\n              <h3 class=\"float-left\">Recherche Avancee</h3>\n              <button mdbBtn type=\"button\" (click)=\"research()\" color=\"primary\" rounded=\"true\" class=\"waves-light float-right\"\n                mdbWavesEffect>\n                <i class=\"fas fa-search\" aria-hidden=\"true\"></i> Rechercher\n              </button>\n            </div> -->\n          </mdb-card-title>\n          <div class=\"row mt-5\">\n            <div class=\"col-12 col-md-3\">\n              <!-- (ngModelChange)=\"onChangePreacher($event)\" -->\n              <mdb-select [options]=\"optionsSpeakers\" [(ngModel)]=\"selectedSpeakers\" [multiple]=\"true\"\n                placeholder=\"Selectionez Predicateur(s)\" label=\"Filter par Predicateur\"></mdb-select>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <input type=\"text\" placeholder=\"Recherchez par Date\" [(bsValue)]=\"dateFilterSelected\"\n                class=\"form-control theme-dark-blue\" bsDaterangepicker>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <mdb-select [options]=\"optionsYears\" [(ngModel)]=\"selectedYears\" [multiple]=\"true\"\n                placeholder=\"Selectionez annee(s)\" label=\"Filter par Annee\"></mdb-select>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <button mdbBtn type=\"button\" (click)=\"research()\" color=\"primary\" rounded=\"true\" class=\"waves-light\"\n                mdbWavesEffect>\n                <i class=\"fas fa-search\" aria-hidden=\"true\"></i> Rechercher\n              </button>\n            </div>\n          </div>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n\n  <div class=\"row border-bottom\">\n    <div class=\"row\">\n      <div class=\"col-md-4 mx-auto my-5 wow fadeInUp\" data-wow-delay=\"0.6s\" *ngFor=\"let item of pagedItems\">\n        <mdb-card>\n          <div class=\"view overlay waves-light\" mdbWavesEffect>\n            <!-- https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg -->\n            <mdb-card-img src=\"/assets/images/cloud3.jpeg\"></mdb-card-img>\n            <!-- <mdb-card-img src=\"assets/images/sermon.jpg\"></mdb-card-img> -->\n            <!-- <iframe class=\"embed-responsive-item\"\n              src=\"https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0\"\n              ></iframe> -->\n            <!-- <div class=\"embed-responsive embed-responsive-16by9\">\n                          <iframe class=\"embed-responsive-item\"\n                            src=\"https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0\"\n                            ></iframe>\n                        </div> -->\n            <!-- https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0 -->\n            <a>\n              <div class=\"mask rgba-white-slight\"></div>\n            </a>\n          </div>\n          <a class=\"btn-floating btn-action ml-auto mr-4 mdb-color blue darken-1 waves-light\"\n            (click)=\"play(item);video1.show()\" mdbWavesEffect>\n            <i class=\"fas fa-play pl-1 waves-light\" mdbWavesEffect></i>\n          </a>\n          <mdb-card-body>\n            <mdb-card-title>\n              <h4 class=\"text-capitalize\">{{ item.title }}</h4>\n            </mdb-card-title>\n            <hr>\n            <div class=\"clearfix\">\n              <p class=\"font-small grey-dark-text mb-0 float-left\"><strong>{{ item.preacher }}</strong></p>\n              <p class=\"font-small grey-dark-text mb-0 float-right\">\n                {{ item.date | date }}</p>\n            </div>\n          </mdb-card-body>\n        </mdb-card>\n      </div>\n\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\"pagedItems.length !== 0\">\n    <div class=\"col-12 d-flex justify-content-center my-2\">\n      <nav aria-label=\"Page navigation\">\n        <ul class=\"pagination wow fadeInUp\" data-wow-delay=\"0.6s\">\n          <li class=\"page-item\">\n            <a class=\"page-link\" (click)=\"setPage(pager.currentPage - 1)\" aria-label=\"Previous\">\n              <span aria-hidden=\"true\">&laquo;</span>\n              <span class=\"sr-only\">Previous</span>\n            </a>\n          </li>\n          <li *ngFor=\"let page of pager.pages\"\n            [ngClass]=\"(pager.currentPage === page ) ? 'page-item active' : 'page-item'\">\n            <a class=\"page-link\" (click)=\"setPage(page)\">{{page}}</a>\n          </li>\n          <li class=\"page-item\">\n            <a class=\"page-link\" (click)=\"setPage(pager.currentPage + 1)\" aria-label=\"Next\">\n              <span aria-hidden=\"true\">&raquo;</span>\n              <span class=\"sr-only\">Next</span>\n            </a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  </div>\n</div>\n<div mdbModal #video1=\"mdbModal\" class=\"modal fade\" id=\"frameModalTop\" tabindex=\"-1\" role=\"dialog\"\n  aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-lg\" role=\"document\">\n    <div class=\"modal-content\" *ngIf=\"currentSermon\">\n      <div class=\"modal-body mb-0 p-0\">\n        <div class=\"embed-responsive embed-responsive-16by9 z-depth-1-half\">\n          <iframe class=\"embed-responsive-item\" [src]=\"currentSermon.uri | safe: 'resourceUrl'\"\n            allowfullscreen></iframe>\n        </div>\n      </div>\n\n      <div class=\"modal-footer\">\n        <div class=\"d-flex flex-column w-100\">\n          <div class=\"justify-content-center\">\n            <h4 class=\"text-center text-capitalize\">{{currentSermon.title}}</h4>\n            <div class=\"clearfix px-4\">\n              <p class=\"font-small grey-dark-text mb-0 float-left\">\n                <span class=\"font-bold\">{{currentSermon.preacher}}</span><br><small>{{currentSermon.location}}</small>\n              </p>\n              <p class=\"font-small grey-dark-text mb-0 float-right\">\n                {{ currentSermon.date }}</p>\n            </div>\n          </div>\n          <div class=\"d-flex justify-content-center\">\n            <div class=\"clearfix\">\n              <a type=\"button\" mdbBtn floating=\"true\" size=\"sm\" class=\"btn-gplus waves-light\" mdbWavesEffect>\n                <i class=\"fas fa-headphones-alt\"></i>\n              </a>\n              <a type=\"button\" mdbBtn floating=\"true\" size=\"sm\" class=\"btn-ins waves-light\" mdbWavesEffect>\n                <i class=\"fas fa-download\"></i>\n              </a>\n            </div>\n            <button type=\"button\" mdbBtn color=\"danger\" outline=\"true\" rounded=\"true\" class=\"waves-light float-right\"\n              mdbWavesEffect data-dismiss=\"modal\" (click)=\"video1.hide()\">\n              <i class=\"fas fa-times-circle\"></i></button>\n          </div>\n        </div>\n\n\n      </div>\n\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container sht-shell-1 my-4\">\n  <div class=\"row sht-search\">\n    <div class=\"col-md-12 p-0 m-0 wow fadeInUp\" data-wow-delay=\"0.6s\">\n      <form class=\"form-inline md-form form-sm active-cyan-2 z-depth-5 border border-primary rounded-lg p-2\">\n        <!-- [(ngModel)]=\"searchText\" .\" -->\n        <input id=\"form-contact-name\" class=\"form-control form-control-sm mx-3 w-75\" type=\"text\"\n          (keydown)=\"search($event)\" autocomplete=\"off\" aria-label=\"Search\" mdbInput>\n        <label for=\"form-contact-name\" class=\"\">Recherchez une Predication par titre, ministre, mot cles, etc...</label>\n        <button *ngIf=\"!showFilter\" type=\"button\" (click)=\"search()\" mdbBtn color=\"danger\" outline=\"true\" rounded=\"true\"\n          class=\"waves-light\" mdbWavesEffect data-dismiss=\"modal\">\n          <i class=\"fas fa-search\" aria-hidden=\"true\"></i>\n        </button>\n        <button type=\"button\" mdbBtn color=\"primary\" (click)=\"showFilter=!showFilter\" outline=\"true\" rounded=\"true\"\n          class=\"waves-light bt-control\" mdbWavesEffect data-dismiss=\"modal\">\n          <i class=\"fas fa-filter\"></i>\n        </button>\n\n        <div class=\"dropdown\" mdbDropdown>\n          <button type=\"button\" mdbDropdownToggle mdbBtn color=\"info\" outline=\"true\" rounded=\"true\"\n            class=\"dropdown-toggle waves-light bt-control\" mdbWavesEffect data-dismiss=\"modal\">\n            <i class=\"fas fa-sort-amount-up\"></i>\n          </button>\n          <div class=\"dropdown-menu dropdown-primary\">\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('date')\">Triez par Date</a>\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('preacher')\">Triez par\n              Predicateur</a>\n            <a class=\"dropdown-item\" href=\"javascript:void(0)\" (click)=\"sortSermons('title')\">Triez par Titre</a>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n  <div *ngIf=\"pagedItems.length === 0 && !showFilter\" class=\"row wow fadeIn\" data-wow-delay=\"0s\">\n    <div class=\"col-12\">\n      <mdb-card class=\"w-80 justify-content-center\">\n        <mdb-card-body>\n          <mdb-card-title>\n            <h3 class=\"text-center text-warning\">Aucun Enregistrement Trouvé <i class=\"fas fa-search ml-4\"\n                aria-hidden=\"true\"></i></h3>\n            <p class=\"text-center\">Vieillez rechercher ou rafiner autrement</p>\n          </mdb-card-title>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n  <!-- wow zoomIn\" data-wow-delay=\"0.1s\" -->\n  <div *ngIf=\"showFilter\" class=\"row wow fadeIn\" data-wow-delay=\"0s\">\n    <div class=\"col-12 filter-panel\">\n      <mdb-card class=\"w-80\">\n        <mdb-card-body>\n          <mdb-card-title>\n            <h3>Recherche Avancee</h3>\n            <!-- <div class=\"mx-5 clearfix\">\n              <h3 class=\"float-left\">Recherche Avancee</h3>\n              <button mdbBtn type=\"button\" (click)=\"research()\" color=\"primary\" rounded=\"true\" class=\"waves-light float-right\"\n                mdbWavesEffect>\n                <i class=\"fas fa-search\" aria-hidden=\"true\"></i> Rechercher\n              </button>\n            </div> -->\n          </mdb-card-title>\n          <div class=\"row mt-5\">\n            <div class=\"col-12 col-md-3\">\n              <!-- (ngModelChange)=\"onChangePreacher($event)\" -->\n              <mdb-select [options]=\"optionsSpeakers\" [(ngModel)]=\"selectedSpeakers\" [multiple]=\"true\"\n                placeholder=\"Selectionez Predicateur(s)\" label=\"Filter par Predicateur\"></mdb-select>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <input type=\"text\" placeholder=\"Recherchez par Date\" [(bsValue)]=\"dateFilterSelected\"\n                class=\"form-control theme-dark-blue\" bsDaterangepicker>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <mdb-select [options]=\"optionsYears\" [(ngModel)]=\"selectedYears\" [multiple]=\"true\"\n                placeholder=\"Selectionez annee(s)\" label=\"Filter par Annee\"></mdb-select>\n            </div>\n            <div class=\"col-12 col-md-3\">\n              <button mdbBtn type=\"button\" (click)=\"research()\" color=\"primary\" rounded=\"true\" class=\"waves-light\"\n                mdbWavesEffect>\n                <i class=\"fas fa-search\" aria-hidden=\"true\"></i> Rechercher\n              </button>\n            </div>\n          </div>\n        </mdb-card-body>\n      </mdb-card>\n    </div>\n  </div>\n\n  <div class=\"row border-bottom\">\n    <div class=\"row\">\n      <div class=\"col-md-4 mx-auto my-5 wow fadeInUp\" data-wow-delay=\"0.6s\" *ngFor=\"let item of pagedItems\">\n        <mdb-card class=\"mx-3\">\n          <div class=\"view overlay waves-light\" mdbWavesEffect>\n            <!-- https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg -->\n            <mdb-card-img src=\"assets/images/cloud3.jpeg\"></mdb-card-img>\n            <!-- <mdb-card-img src=\"assets/images/sermon.jpg\"></mdb-card-img> -->\n            <!-- <iframe class=\"embed-responsive-item\"\n              src=\"https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0\"\n              ></iframe> -->\n            <!-- <div class=\"embed-responsive embed-responsive-16by9\">\n                          <iframe class=\"embed-responsive-item\"\n                            src=\"https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0\"\n                            ></iframe>\n                        </div> -->\n            <!-- https://player.vimeo.com/video/292694612?color=f5f8f9&title=0&byline=0&portrait=0 -->\n            <a>\n              <div class=\"mask rgba-white-slight\"></div>\n            </a>\n          </div>\n          <a class=\"btn-floating btn-action ml-auto mr-4 mdb-color blue darken-1 waves-light\"\n            (click)=\"play(item);\" mdbWavesEffect>\n            <i class=\"fas fa-play pl-1 waves-light\" mdbWavesEffect></i>\n          </a>\n          <mdb-card-body>\n            <mdb-card-title>\n              <h4 class=\"text-capitalize\">{{ item.title }}</h4>\n            </mdb-card-title>\n            <hr>\n            <div class=\"clearfix\">\n              <p class=\"font-small grey-dark-text mb-0 float-left\"><strong>{{ item.preacher }}</strong></p>\n              <p class=\"font-small grey-dark-text mb-0 float-right\">\n                {{ item.date | date }}</p>\n            </div>\n          </mdb-card-body>\n        </mdb-card>\n      </div>\n\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\"pagedItems.length !== 0\">\n    <div class=\"col-12 d-flex justify-content-center my-2\">\n      <nav aria-label=\"Page navigation\">\n        <ul class=\"pagination wow fadeInUp\" data-wow-delay=\"0.6s\">\n          <li class=\"page-item\">\n            <a class=\"page-link\" (click)=\"setPage(pager.currentPage - 1)\" aria-label=\"Previous\">\n              <span aria-hidden=\"true\">&laquo;</span>\n              <span class=\"sr-only\">Previous</span>\n            </a>\n          </li>\n          <li *ngFor=\"let page of pager.pages\"\n            [ngClass]=\"(pager.currentPage === page ) ? 'page-item active' : 'page-item'\">\n            <a class=\"page-link\" (click)=\"setPage(page)\">{{page}}</a>\n          </li>\n          <li class=\"page-item\">\n            <a class=\"page-link\" (click)=\"setPage(pager.currentPage + 1)\" aria-label=\"Next\">\n              <span aria-hidden=\"true\">&raquo;</span>\n              <span class=\"sr-only\">Next</span>\n            </a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  </div>\n</div>\n<div mdbModal #videoModal=\"mdbModal\" class=\"modal fade\" id=\"frameModalTop\" tabindex=\"-1\" role=\"dialog\"\n  aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-lg\" role=\"document\">\n    <div class=\"modal-content\" *ngIf=\"currentSermon\">\n      <div class=\"modal-body mb-0 p-0\">\n        <div class=\"embed-responsive embed-responsive-16by9 z-depth-1-half wow zoomIn\" data-wow-delay=\"0.1s\">\n          <iframe class=\"embed-responsive-item\" [src]=\"currentSermon.videoId | safeVimeo\"\n            allowfullscreen></iframe>\n        </div>\n      </div>\n\n      <div class=\"modal-footer\">\n        <div class=\"d-flex flex-column w-100\">\n          <div class=\"justify-content-center\">\n            <h4 class=\"text-center text-capitalize\">{{currentSermon.title}}</h4>\n            <div class=\"clearfix px-4\">\n              <p class=\"font-small grey-dark-text mb-0 float-left\">\n                <span class=\"font-bold\">{{currentSermon.preacher}}</span><br><small>{{currentSermon.location}}</small>\n              </p>\n              <p class=\"font-small grey-dark-text mb-0 float-right\">\n                {{ currentSermon.date }}</p>\n            </div>\n          </div>\n          <div class=\"d-flex justify-content-center\">\n            <div class=\"clearfix\">\n              <a type=\"button\" mdbBtn floating=\"true\" size=\"sm\" class=\"btn-gplus waves-light\" mdbWavesEffect>\n                <i class=\"fas fa-headphones-alt\"></i>\n              </a>\n              <a type=\"button\" mdbBtn floating=\"true\" size=\"sm\" class=\"btn-ins waves-light\" mdbWavesEffect>\n                <i class=\"fas fa-download\"></i>\n              </a>\n            </div>\n            <button type=\"button\" mdbBtn color=\"danger\" outline=\"true\" rounded=\"true\" class=\"waves-light float-right\"\n              mdbWavesEffect data-dismiss=\"modal\" (click)=\"videoModal.hide()\">\n              <i class=\"fas fa-times-circle\"></i></button>\n          </div>\n        </div>\n\n\n      </div>\n\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -2148,7 +2101,7 @@ module.exports = "<div class=\"container sht-shell-1 my-4\">\n  <div class=\"row
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "button {\n  font-weight: 700; }\n\n.sht-search {\n  margin: 10px 0 0 0;\n  padding: 0; }\n\n.sht-search label {\n    top: 20px;\n    left: 40px;\n    font-size: 20px;\n    color: black; }\n\n.sht-search .bt-control {\n    width: 55px;\n    padding: 0.7rem 0.5rem; }\n\n.sht-search input {\n    font-size: 20px;\n    color: black; }\n\n.sht-search .search-panel {\n    border-radius: 3px; }\n\n.filter-panel {\n  top: -20px; }\n\n.pagination a {\n  font-size: 22px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvc2VydmljZXMtc2VybW9ucy9EOlxcV29ya3NwYWNlXFxQcm90b3R5cGVzXFxEZXZPcHNTaFRhYlxcU2hla2luYWhXZWJcXHNoZWtpbmFoUG9ydGFsQXBwL3NyY1xcYXBwXFxwYWdlc1xcc2VydmljZXMtc2VybW9uc1xcc2VydmljZXMtc2VybW9ucy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLGdCQUFnQixFQUFBOztBQUVsQjtFQUNFLGtCQUFrQjtFQUNsQixVQUFVLEVBQUE7O0FBRlo7SUFLSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGVBQWU7SUFDZixZQUFZLEVBQUE7O0FBUmhCO0lBWUksV0FBVztJQUNYLHNCQUFzQixFQUFBOztBQWIxQjtJQWlCSSxlQUFlO0lBQ2YsWUFBWSxFQUFBOztBQWxCaEI7SUF3Qkksa0JBQWtCLEVBQUE7O0FBSXRCO0VBQ0UsVUFBVSxFQUFBOztBQUdaO0VBRUksZUFBZSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvc2VydmljZXMtc2VybW9ucy9zZXJ2aWNlcy1zZXJtb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmJ1dHRvbntcclxuICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcbi5zaHQtc2VhcmNoIHtcclxuICBtYXJnaW46IDEwcHggMCAwIDA7XHJcbiAgcGFkZGluZzogMDtcclxuXHJcbiAgbGFiZWwge1xyXG4gICAgdG9wOiAyMHB4O1xyXG4gICAgbGVmdDogNDBweDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICB9XHJcblxyXG4gIC5idC1jb250cm9sIHtcclxuICAgIHdpZHRoOiA1NXB4O1xyXG4gICAgcGFkZGluZzogMC43cmVtIDAuNXJlbTtcclxuICB9XHJcblxyXG4gIGlucHV0IHtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICB9XHJcblxyXG4gIC5zZWFyY2gtcGFuZWwge1xyXG4gICAgLXdlYmtpdC1ib3JkZXItcmFkaXVzOiAzcHg7XHJcbiAgICAtbW96LWJvcmRlci1yYWRpdXM6IDNweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcclxuICB9XHJcbn1cclxuXHJcbi5maWx0ZXItcGFuZWwge1xyXG4gIHRvcDogLTIwcHg7XHJcbn1cclxuXHJcbi5wYWdpbmF0aW9uIHtcclxuICBhIHtcclxuICAgIGZvbnQtc2l6ZTogMjJweDtcclxuICB9XHJcbn1cclxuIl19 */"
+module.exports = "button {\n  font-weight: 700; }\n\n.sht-search {\n  margin: 10px 0 0 0;\n  padding: 0; }\n\n.sht-search label {\n    top: 20px;\n    left: 40px;\n    font-size: 20px;\n    color: black; }\n\n@media screen and (max-width: 900px) {\n      .sht-search label {\n        font-size: 14px; } }\n\n.sht-search .bt-control {\n    width: 55px;\n    padding: 0.7rem 0.5rem; }\n\n.sht-search input {\n    font-size: 20px;\n    color: black; }\n\n.sht-search .search-panel {\n    border-radius: 3px; }\n\n.filter-panel {\n  top: -20px; }\n\n.pagination a {\n  font-size: 22px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvc2VydmljZXMtc2VybW9ucy9EOlxcV29ya3NwYWNlXFxQcm90b3R5cGVzXFxEZXZPcHNTaFRhYlxcU2hla2luYWhXZWJcXHNoZWtpbmFoUG9ydGFsQXBwL3NyY1xcYXBwXFxwYWdlc1xcc2VydmljZXMtc2VybW9uc1xcc2VydmljZXMtc2VybW9ucy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQixFQUFBOztBQUdsQjtFQUNFLGtCQUFrQjtFQUNsQixVQUFVLEVBQUE7O0FBRlo7SUFLSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGVBQWU7SUFDZixZQUFZLEVBQUE7O0FBRVo7TUFWSjtRQVdNLGVBQWUsRUFBQSxFQUVsQjs7QUFiSDtJQWdCSSxXQUFXO0lBQ1gsc0JBQXNCLEVBQUE7O0FBakIxQjtJQXFCSSxlQUFlO0lBQ2YsWUFBWSxFQUFBOztBQXRCaEI7SUE0Qkksa0JBQWtCLEVBQUE7O0FBSXRCO0VBQ0UsVUFBVSxFQUFBOztBQUdaO0VBRUksZUFBZSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvc2VydmljZXMtc2VybW9ucy9zZXJ2aWNlcy1zZXJtb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcblxyXG4uc2h0LXNlYXJjaCB7XHJcbiAgbWFyZ2luOiAxMHB4IDAgMCAwO1xyXG4gIHBhZGRpbmc6IDA7XHJcblxyXG4gIGxhYmVsIHtcclxuICAgIHRvcDogMjBweDtcclxuICAgIGxlZnQ6IDQwcHg7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcblxyXG4gICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcclxuICAgICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgfVxyXG4gIH1cclxuXHJcbiAgLmJ0LWNvbnRyb2wge1xyXG4gICAgd2lkdGg6IDU1cHg7XHJcbiAgICBwYWRkaW5nOiAwLjdyZW0gMC41cmVtO1xyXG4gIH1cclxuXHJcbiAgaW5wdXQge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gIH1cclxuXHJcbiAgLnNlYXJjaC1wYW5lbCB7XHJcbiAgICAtd2Via2l0LWJvcmRlci1yYWRpdXM6IDNweDtcclxuICAgIC1tb3otYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxufVxyXG5cclxuLmZpbHRlci1wYW5lbCB7XHJcbiAgdG9wOiAtMjBweDtcclxufVxyXG5cclxuLnBhZ2luYXRpb24ge1xyXG4gIGEge1xyXG4gICAgZm9udC1zaXplOiAyMnB4O1xyXG4gIH1cclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -2167,9 +2120,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_sermon_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./search-sermon.service */ "./src/app/pages/services-sermons/search-sermon.service.ts");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var _shared_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @shared/services */ "./src/app/shared/services/index.ts");
-/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ "./node_modules/ngx-bootstrap/datepicker/fesm5/ngx-bootstrap-datepicker.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ng_uikit_pro_standard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-uikit-pro-standard */ "./node_modules/ng-uikit-pro-standard/fesm5/ng-uikit-pro-standard.js");
+/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ "./node_modules/ngx-bootstrap/datepicker/fesm5/ngx-bootstrap-datepicker.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -2222,7 +2177,9 @@ var ServicesSermonsComponent = /** @class */ (function () {
         this.setPage(1);
     };
     ServicesSermonsComponent.prototype.play = function (item) {
+        this.currentSermon = null;
         this.currentSermon = item;
+        this.videoPlayer.show();
     };
     ServicesSermonsComponent.prototype.download = function (item) {
         alert(item.title);
@@ -2239,10 +2196,9 @@ var ServicesSermonsComponent = /** @class */ (function () {
             .filter(function (x) { return _this.selectedSpeakers.includes(x.value); })
             .map(function (y) { return y.label; });
         this.sermonFilter.dates = this.dateFilterSelected
-            ? this.dateFilterSelected.map(function (x) { return moment__WEBPACK_IMPORTED_MODULE_6__(x).format('L'); })
+            ? this.dateFilterSelected.map(function (x) { return moment__WEBPACK_IMPORTED_MODULE_7__(x).format('L'); })
             : [];
-        this.sermonFilter.years = this.selectedYears
-            .map(function (y) { return +y; });
+        this.sermonFilter.years = this.selectedYears.map(function (y) { return +y; });
         this.searchService.researchSermons(this.sermonFilter).subscribe(function (items) {
             _this.sermons = items;
             _this.setPage(1);
@@ -2277,18 +2233,22 @@ var ServicesSermonsComponent = /** @class */ (function () {
         this.pagedItems = this.sermons.slice(this.pager.startIndex, this.pager.endIndex + 1);
         this.currentSermon = this.pagedItems[0];
     };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('videoModal'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", ng_uikit_pro_standard__WEBPACK_IMPORTED_MODULE_5__["ModalDirective"])
+    ], ServicesSermonsComponent.prototype, "videoPlayer", void 0);
     ServicesSermonsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-services-sermons',
             template: __webpack_require__(/*! ./services-sermons.component.html */ "./src/app/pages/services-sermons/services-sermons.component.html"),
-            providers: [ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_5__["BsLocaleService"]],
+            providers: [ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_6__["BsLocaleService"]],
             styles: [__webpack_require__(/*! ./services-sermons.component.scss */ "./src/app/pages/services-sermons/services-sermons.component.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services__WEBPACK_IMPORTED_MODULE_4__["SermonService"],
             _shared_services__WEBPACK_IMPORTED_MODULE_4__["PagerService"],
             _search_sermon_service__WEBPACK_IMPORTED_MODULE_2__["SearchService"],
             _shared_services__WEBPACK_IMPORTED_MODULE_4__["UtilsService"],
-            ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_5__["BsLocaleService"]])
+            ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_6__["BsLocaleService"]])
     ], ServicesSermonsComponent);
     return ServicesSermonsComponent;
 }());
@@ -2705,7 +2665,7 @@ var DATA_SEMONS = [
         preacher: 'Fr Grace Dimpa',
         date: '6/20/2018',
         location: 'Kinshasa, RDC',
-        src: '292694612',
+        videoId: '292694612',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2717,7 +2677,7 @@ var DATA_SEMONS = [
         preacher: 'Fr. Dauphin Elalanga',
         date: '9/23/2018',
         location: 'Kinshasa, RDC',
-        src: '291639712',
+        videoId: '291639712',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2729,7 +2689,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Faustin Lukumwena',
         date: '9/08/2018',
         location: 'Kinshasa, RDC',
-        src: '291474042',
+        videoId: '291474042',
         screen: 'none',
         isDefault: false,
         islocal: false,
@@ -2741,7 +2701,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '6/09/2018',
         location: 'Kinshasa, RDC',
-        src: '290988849',
+        videoId: '290988849',
         screen: 'none',
         isDefault: true,
         islocal: false,
@@ -2753,7 +2713,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '9/30/2016',
         location: 'BibleWay Cloverdale - Vancouver, CA',
-        src: '293221804',
+        videoId: '293221804',
         screen: 'none',
         isDefault: true,
         islocal: false,
@@ -2765,7 +2725,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '7/18/2018',
         location: 'Kinshasa, RDC',
-        src: '280806870',
+        videoId: '280806870',
         screen: 'none',
         isDefault: true,
         islocal: false,
@@ -2777,7 +2737,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '5/29/2019',
         location: 'Kinshasa, RDC',
-        src: '339273982',
+        videoId: '339273982',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2789,7 +2749,7 @@ var DATA_SEMONS = [
         preacher: 'Fr. Dauphin Elalanga',
         date: '5/26/2019',
         location: 'Kinshasa, RDC',
-        src: '338543557',
+        videoId: '338543557',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2801,7 +2761,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '5/10/2019',
         location: 'Kinshasa, RDC',
-        src: '336504889',
+        videoId: '336504889',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2813,7 +2773,7 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '5/09/2019',
         location: 'Kinshasa, RDC',
-        src: '336463656',
+        videoId: '336463656',
         screen: 'none',
         isDefault: false,
         islocal: true,
@@ -2825,13 +2785,72 @@ var DATA_SEMONS = [
         preacher: 'Pasteur Richard Diyoka',
         date: '5/01/2019',
         location: 'Kinshasa, RDC',
-        src: '333682726',
+        videoId: '333682726',
         screen: 'none',
         isDefault: false,
         islocal: true,
         isInvited: false
     }
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/shared/pipes/index.ts":
+/*!***************************************!*\
+  !*** ./src/app/shared/pipes/index.ts ***!
+  \***************************************/
+/*! exports provided: PIPES */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PIPES", function() { return PIPES; });
+/* harmony import */ var _safe_vimeo_pipe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./safe-vimeo.pipe */ "./src/app/shared/pipes/safe-vimeo.pipe.ts");
+/* harmony import */ var _safe_pipe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./safe.pipe */ "./src/app/shared/pipes/safe.pipe.ts");
+
+
+var PIPES = [_safe_vimeo_pipe__WEBPACK_IMPORTED_MODULE_0__["SafeVimeoPipe"], _safe_pipe__WEBPACK_IMPORTED_MODULE_1__["SafePipe"]];
+
+
+/***/ }),
+
+/***/ "./src/app/shared/pipes/safe-vimeo.pipe.ts":
+/*!*************************************************!*\
+  !*** ./src/app/shared/pipes/safe-vimeo.pipe.ts ***!
+  \*************************************************/
+/*! exports provided: SafeVimeoPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SafeVimeoPipe", function() { return SafeVimeoPipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
+
+
+var SafeVimeoPipe = /** @class */ (function () {
+    function SafeVimeoPipe(sanitizer) {
+        this.sanitizer = sanitizer;
+    }
+    SafeVimeoPipe.prototype.transform = function (value) {
+        if (!value) {
+            return '';
+        }
+        var uri = "https://player.vimeo.com/video/" + value + "?color=f5f8f9&title=0&byline=0&portrait=0";
+        return this.sanitizer.bypassSecurityTrustResourceUrl(uri);
+    };
+    SafeVimeoPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+            name: 'safeVimeo'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
+    ], SafeVimeoPipe);
+    return SafeVimeoPipe;
+}());
+
 
 
 /***/ }),
@@ -3007,30 +3026,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SermonService", function() { return SermonService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _utils_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils.service */ "./src/app/shared/services/utils.service.ts");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models */ "./src/app/shared/models/index.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models */ "./src/app/shared/models/index.ts");
-
 
 
 
 
 
 var SermonService = /** @class */ (function () {
-    function SermonService(utils) {
-        this.utils = utils;
+    function SermonService() {
     }
     SermonService.prototype.getSermons = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(_models__WEBPACK_IMPORTED_MODULE_5__["DATA_SEMONS"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (items) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_models__WEBPACK_IMPORTED_MODULE_3__["DATA_SEMONS"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (items) {
             return items.sort(function (a, b) { return new Date(b.date).getTime() - new Date(a.date).getTime(); });
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (item) { return item; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (item) {
-            item.forEach(function (e) {
-                // const uri = 'https://player.vimeo.com/video/' + e.src + '?color=f5f8f9&title=0&byline=0&portrait=0';
-                var uri = "https://player.vimeo.com/video/" + e.src + "?color=f5f8f9&title=0&byline=0&portrait=0";
-                e.uri = uri; // this.utils.safeVideoUrl(uri);
-            });
-            return item;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (item) { return item; }));
+    };
+    SermonService.prototype.getLastTwoSermons = function () {
+        var _this = this;
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_models__WEBPACK_IMPORTED_MODULE_3__["DATA_SEMONS"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (items) {
+            return _this.sortByKey(items, 'date');
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeLast"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (items) {
+            return items[0];
         }));
     };
     SermonService.prototype.sortByKey = function (items, key) {
@@ -3048,7 +3065,7 @@ var SermonService = /** @class */ (function () {
     };
     SermonService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_utils_service__WEBPACK_IMPORTED_MODULE_2__["UtilsService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], SermonService);
     return SermonService;
 }());
