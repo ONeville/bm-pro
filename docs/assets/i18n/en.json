@@ -1,0 +1,70 @@
+{
+  "header": {
+    "missions": "missions",
+    "events": "events",
+    "livestreaming": "live streaming",
+    "contact": "contact-us",
+    "donation": "Donation",
+    "banners": {
+      "source": "revelation 10 : 1 - 7",
+      "sourceText": "But in the days of the sounding of the seventh angel..."
+    },
+    "home": "Home",
+    "ourChurch": {
+      "title": "Our Church",
+      "aboutUs": "About-Us",
+      "ourBelief": "Our Belief",
+      "ourHistory": "Our History",
+      "ourPastor": "Our Pastor",
+      "ourStaff": "Local Ministers"
+    },
+    "prophet": {
+      "title": "William Branham ",
+      "prophet": "The Prophet",
+      "archives": "Archives"
+    },
+    "plus": {
+      "library": "Library",
+      "shekinahLibrary": "Shekinah Library",
+      "archiveSermons": "Sermons's Archive",
+      "goldNuggets": "Gold Nuggets",
+      "audioTape": "Audia Message",
+      "bible": "Bible",
+      "music": "Music",
+      "photo": "Photo",
+      "video": "Videos / Documentaries",
+      "event": "News/Events.",
+      "live": "Live Streaming"
+    }
+  },
+  "footer": {
+    "aboutUs": "",
+    "links": "",
+    "contactUs": {
+      "description": "",
+      "address": "",
+      "link": ""
+    }
+  },
+  "home": {
+    "sliders": {
+      "item1": {
+        "title": "...It's later than we think",
+        "subtitle": "Redeeming the time, because the days are evil.",
+        "ref": "Ephesians 5:16"
+      },
+      "item2": {
+        "title": "...This Temple",
+        "subtitle": "It is written, My house shall be called the house of prayer",
+        "ref": "Matthew 21:13"
+      },
+      "item3": {
+        "title": "Those old songs just thrill me. They’re inspiring.",
+        "subtitle": "58-0109 - The Called-Out",
+        "ref": "Rev. William Marrion Branham"
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,69 @@
+{
+  "header": {
+    "missions": "missions",
+    "events": "actualites",
+    "livestreaming": "Le direct",
+    "contact": "contactez-nous",
+    "donation": "faire un don",
+    "banners": {
+      "source": "Apocalypse 10 : 1 - 7",
+      "sourceText": "Mais qu'aux jours de la voix du septième ange..."
+    },
+    "home": "Accueil",
+    "ourChurch": {
+      "title": "Notre Église",
+      "aboutUs": "A propos de Nous",
+      "ourBelief": "Ce Que Nous Croyons ",
+      "ourHistory": "Notre Histoire",
+      "ourPastor": "Notre Pasteur",
+      "ourStaff": "Ministres Locaux"
+    },
+    "prophet": {
+      "title": "William Branham",
+      "prophet": "Le Prophète",
+      "archives": "Archives"
+    },
+    "plus": {
+      "library": "Librairie",
+      "shekinahLibrary": "Shekinah Publication",
+      "archiveSermons": "Prédications Archives",
+      "goldNuggets": "Pépite d'or",
+      "audioTape": "Message audio",
+      "bible": "La Bible",
+      "music": "Musique",
+      "photo": "Gallerie Photos",
+      "video": "Vidéo / Documentaires",
+      "event": "Actualité / Events.",
+      "live": "Le Direct"
+    }
+  },
+  "footer": {
+    "aboutUs": "",
+    "links": "",
+    "contactUs": {
+      "description": "",
+      "address": "",
+      "link": ""
+    }
+  },
+  "home": {
+    "sliders": {
+      "item1": {
+        "title": "..Il est peut être plus tard que nous pensons.",
+        "subtitle": "Rachetez le temps, car les jours sont mauvais.",
+        "ref": "Éphésiens 5:16"
+      },
+      "item2": {
+        "title": "...Ce Temple",
+        "subtitle": "Il est écrit: Ma maison sera appelée une maison de prière.",
+        "ref": "Matthieu  21:13"
+      },
+      "item3": {
+        "title": "Ces vieux cantiques me transportent simplement de joie. Ils inspirent.",
+        "subtitle": "58-0109 - Les Appeles A Sortir",
+        "ref": "Rev. William Marrion Branham"
+      }
+    }
+  }
+
+}
