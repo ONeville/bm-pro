@@ -63,6 +63,34 @@
         "subtitle": "58-0109 - Les Appeles A Sortir",
         "ref": "Rev. William Marrion Branham"
       }
+    },
+    "videoPanel": "Recentes Predications",
+    "schedule": {
+      "title": "Horaires des Services",
+      "sunday": "Dimanche",
+      "wednesday": "Mercredi",
+      "thursday": "Mercredi",
+      "am": "matin",
+      "pm": "soir"
+    },
+    "quote": {
+      "title": "Citation du Jour",
+      "item1": {
+        "description": "Je veux que vous vous souveniez bien de ça.Pour votre premier pas, quelqu’un vous conduisait.Et pour votre dernier pas, quelqu’un vous conduira.",
+        "source": "65-1031 A - Êre Conduit"
+      },
+      "item2": {
+        "description": "vous pouvez apprendre le Message que nous essayons d’enseigner, mais encore là, ce n’est pas ça qui va vous donner la Vie Éternelle.Il faut que vous acceptiez la Personne, Jésus - Christ.",
+        "source": "65-1031 A - Êre Conduit"
+      },
+      "item3": {
+        "description": "Comment le jeune homme rendra-t-il pur son sentier? En se dirigeant d'après ta parole. Je te cherche de tout mon coeur: Ne me laisse pas égarer loin de tes commandements!",
+        "source": "Psaumes 119: 9 - 10"
+      },
+      "item4": {
+        "description": "C'est l'ancre d'une foi divine qui appelle toute chose contraire à la Parole de Dieu comme n'existant pas. Cela donne une nouvelle vie. Cela donne l'espérance à ceux qui sont mourants. Cela donne du courage aux aibles. Ça donne la guérison aux malades.",
+        "source": "57-1222 - La Grande Lumiere Brillante"
+      }
     }
   }
 

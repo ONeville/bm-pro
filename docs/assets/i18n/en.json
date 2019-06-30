@@ -63,6 +63,34 @@
         "subtitle": "58-0109 - The Called-Out",
         "ref": "Rev. William Marrion Branham"
       }
+    },
+    "videoPanel": "Most Recent Sermons",
+    "schedule": {
+      "title": "Services Schedule",
+      "sunday": "Sunday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "am": "morning",
+      "pm": ""
+    },
+    "quote": {
+      "title": "Daily Quote",
+      "item1":{
+        "description": "I want you to remember that your first step, somebody led you. And your last step, somebody will be leading you.",
+        "source": "65-1031 A - Leadership"
+      },
+      "item2": {
+        "description": "You can learn the Message that we are trying to teach, but still that won't give you Eternal Life. You've got to accept the Person, Jesus Christ.",
+        "source": "65-1031 A - Leadership"
+      },
+      "item3": {
+        "description": "Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. With my whole heart have I sought thee: O let me not wander from thy commandments.",
+        "source": "Psalm 119: 9 - 10"
+      },
+      "item4": {
+        "description": "It’s a anchor of a Divine faith that calls anything contrary to the Word of God as though it wasn’t. It puts new Life. It gives hope to the dying. It gives courage to the weak. It gives healing to the sick.",
+        "source": "57-1222 - The Great Shining Light"
+      }
     }
   }
 
